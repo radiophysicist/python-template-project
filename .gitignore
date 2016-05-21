@@ -1,0 +1,18 @@
+# JetBrains IDE project files
+.idea/*
+
+# Python generated stuff
+*.py[co]
+__pycache__
+
+# Application output
+#*.log
+#*.dat
+
+# Doxygen-generated docs
+doc/
+
+# Unittesing stuff
+.cache
+.coverage
+htmlcov/

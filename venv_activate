@@ -1,0 +1,3 @@
+eval `grep "VENV=" Makefile`
+source ${VENV}/bin/activate
+
