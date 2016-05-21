@@ -20,3 +20,11 @@ To generate [Doxygen](http://www.stack.nl/~dimitri/doxygen/) documentation
 use command
 `make doc`
 (in addition to doxygen, doxypy and graphviz required)
+
+To run unittest use command
+`make unit`
+
+To run unittest with generating coverage report use command
+`make unit-coverage`
+
+To run test you may need to uncomment test packages in `requirements.txt`
