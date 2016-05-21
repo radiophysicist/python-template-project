@@ -25,6 +25,12 @@ clean-venv:
 	rm -rf $(VENV)
 
 
+# Target to generate doxygen documentation
+.PHONY: doc
+doc:
+	doxygen
+
+
 # Target to remove automatically generated files
 .PHONY: clean
 clean:

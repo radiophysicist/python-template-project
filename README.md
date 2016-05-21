@@ -1,7 +1,8 @@
 # Python virtualenv template project
 
 Contains python project quickstart template. 
-Uses [virtualenv](https://virtualenv.pypa.io/en/stable/) to install project dependencies.
+Uses [virtualenv](https://virtualenv.pypa.io/en/stable/) to install project
+dependencies.
 Uses [GNU make](https://www.gnu.org/software/make/) to execute common tasks 
 
 To start you need to make the following steps:
@@ -14,3 +15,8 @@ To start you need to make the following steps:
 `make venv`
 5. Activate virtualenv in the sh-compatible linux shell with command
 `source venv_activate`
+
+To generate [Doxygen](http://www.stack.nl/~dimitri/doxygen/) documentation
+use command
+`make doc`
+(in addition to doxygen, doxypy and graphviz required)
