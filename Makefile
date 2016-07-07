@@ -60,3 +60,10 @@ clean: clean-doc
 	# Remove coverage report
 	rm -rf ./htmlcov
 	rm -f ./.coverage
+
+
+# Create tar archive of the latest commit
+.PHONY: tarball
+tarball:
+	rm -f ../$(PROJECT).tar.gz
+	git archive --prefix=$(PROJECT)/ -o ../$(PROJECT).tar.gz HEAD
