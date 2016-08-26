@@ -6,6 +6,8 @@ VENV=~/tmp/virtualenv/$(PROJECT)
 PYTHON=python2.7
 # Command to run unit tests
 TESTCMD=$(VENV)/bin/py.test
+# Doxygen output directory
+DOXYGEN_DIR=./doc
 
 
 # Target to initialize virtualenv itself
@@ -29,12 +31,15 @@ clean-venv:
 
 # Target to generate doxygen documentation
 .PHONY: doc
-doc:
-	doxygen
+doc: $(DOXYGEN_DIR)
+        doxygen
+
+$(DOXYGEN_DIR):
+        mkdir -p $(DOXYGEN_DIR)
 
 # Target to remove doxygen documentation
 clean-doc:
-	rm -rf ./doc
+        rm -rf $(DOXYGEN_DIR)
 
 
 # Target to run unittests using pytest
