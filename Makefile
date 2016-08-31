@@ -5,7 +5,7 @@ VENV=~/tmp/virtualenv/$(PROJECT)
 # Python version to be used
 PYTHON=python2.7
 # Command to run unit tests
-TESTCMD=$(VENV)/bin/py.test
+TESTCMD=$(VENV)/bin/py.test --ignore=./debian
 # Doxygen output directory
 DOXYGEN_DIR=./doc
 
