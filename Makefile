@@ -32,14 +32,14 @@ clean-venv:
 # Target to generate doxygen documentation
 .PHONY: doc
 doc: $(DOXYGEN_DIR)
-        doxygen
+	doxygen
 
 $(DOXYGEN_DIR):
-        mkdir -p $(DOXYGEN_DIR)
+	mkdir -p $(DOXYGEN_DIR)
 
 # Target to remove doxygen documentation
 clean-doc:
-        rm -rf $(DOXYGEN_DIR)
+	rm -rf $(DOXYGEN_DIR)
 
 
 # Target to run unittests using pytest
